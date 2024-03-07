@@ -1,0 +1,31 @@
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); // Crée une grille responsive
+    gap: 20px; // Espacement entre les cartes
+    padding: 20px; // Padding autour de la grille
+  }
+  
+  .event-card {
+    background: #fff; // Couleur de fond de la carte
+    border-radius: 8px; // Bordures arrondies
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); // Ombre portée
+    padding: 15px; // Padding à l'intérieur de la carte
+    transition: transform 0.3s ease, box-shadow 0.3s ease; // Animation au survol
+  
+    &:hover {
+      transform: translateY(-5px); // Légère élévation au survol
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2); // Ombre portée plus prononcée au survol
+    }
+  
+    h2 {
+      margin-top: 0; // Ajustez selon votre besoin
+      color: #333; // Couleur du titre
+      font-size: 1.5em; // Taille du titre
+    }
+  
+    p {
+      color: #666; // Couleur du texte
+      font-size: 1em; // Taille du texte
+      margin: 10px 0; // Espacement autour des paragraphes
+    }
+  }
